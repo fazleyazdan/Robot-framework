@@ -8,7 +8,7 @@ ${browser}    chrome
 ${url}    https://testautomationpractice.blogspot.com/
 
 *** Test Cases ***
-TestInputBoxes
+Handling Radio Buttons & checkboxes
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
     Set Selenium Speed    2seconds              # all statements will be executed after 2 seconds of delay
