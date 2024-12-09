@@ -1,7 +1,9 @@
 # here we will test input boxes & perform different validations on it
+
 *** Settings ***
 Library    SeleniumLibrary
 Library    XML
+
 *** Variables ***
 ${browser}    chrome
 ${url}    https://www.saucedemo.com/
