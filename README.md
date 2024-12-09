@@ -29,6 +29,24 @@ Here we can define custom keywords.
 
 **Note :** Every element or keyword & their values are separated by a **Tab**
 
+**Simple Test Case**
+```robot
+*** Settings ***
+Library    SeleniumLibrary 
+
+*** Variables ***
+
+*** Test Cases ***
+LoginTest
+    Open Browser    https://www.saucedemo.com/    chrome
+    Input Text    id:user-name    standard_user
+    Input Text    id:password    secret_sauce
+    Click Element    id:login-button
+    Close Browser
+```
+
+**Usage of Variable & Keyword**
+
 ```robot
 *** Settings ***
 Library    SeleniumLibrary 
@@ -42,16 +60,13 @@ ${browser}    chrome
 
 *** Test Cases ***
 LoginTest
-    Open Browser    ${url}    ${browser}
-#   Open Browser    https://www.saucedemo.com/    chrome
-    Input Text    id:user-name    standard_user
-    Input Text    id:password    secret_sauce
-    Click Element    id:login-button
-    Close Browser
+    LoginToApp
 
 *** Keywords ***
+
 # Here we create custom keywords & then their functionality
 # For example here we can make a custom keyword "LoginToApp" having functionality to login to App.
+
 LoginToApp
     Open Browser    https://www.saucedemo.com/    chrome
     Open Browser    ${url}    ${browser}
@@ -59,4 +74,6 @@ LoginToApp
     Input Text    id:password    secret_sauce
     Click Element    id:login-button
     Close Browser
+
+# As you can see we have called that keyword above in a **Test Case**.
 ```
