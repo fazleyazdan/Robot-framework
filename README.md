@@ -75,5 +75,5 @@ LoginToApp
     Click Element    id:login-button
     Close Browser
 
-# As you can see we have called that keyword above in a **Test Case**.
+# As you can see we have called that keyword above in a Test Case.
 ```
