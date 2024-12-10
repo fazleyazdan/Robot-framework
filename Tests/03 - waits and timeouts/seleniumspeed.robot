@@ -24,5 +24,5 @@ Testing Waits
     Click Element    id:login-button
 
     ${seleniumspeed}=    Get Selenium Speed
-    Log To Console    ${seleniumspeed}    # here it will be 2s because we have specified speed of 2s
+    Log To Console    ${seleniumspeed}    # here it will be 2s because we have specified speed earlier
     Close Browser
