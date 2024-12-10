@@ -17,9 +17,12 @@ Testing Waits
 
     ${seleniumspeed}=    Get Selenium Speed    # if you wanna know default selenium speed
     Log To Console    ${seleniumspeed}    # here the speed will be 0s because we have'nt specified it yet
+    
     Set Selenium Speed    2             # every statement below will be executed after 2s of delay
     Input Text    id:user-name    standard_user
     Input Text    id:password    secret_sauce
     Click Element    id:login-button
+
+    ${seleniumspeed}=    Get Selenium Speed
     Log To Console    ${seleniumspeed}    # here it will be 2s because we have specified speed of 2s
     Close Browser
