@@ -21,5 +21,5 @@ Testing Waits
     Input Text    id:user-name    standard_user
     Input Text    id:password    secret_sauce
     Click Element    id:login-button
-    Close Browser
     Log To Console    ${seleniumspeed}    # here it will be 2s because we have specified speed of 2s
+    Close Browser
