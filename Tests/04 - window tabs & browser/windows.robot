@@ -10,7 +10,7 @@ Library    SeleniumLibrary
 
 
 *** Test Cases ***
-Handling tabs
+Handling Windows
     Open Browser    https://demo.automationtesting.in/Register.html    chrome     # index 1
     Maximize Browser Window
     
@@ -22,7 +22,7 @@ Handling tabs
     Input Text    xpath://input[@placeholder="First Name"]    testing
     ${title}=    Get Title
     Log To Console    ${title}
-    
+
     Sleep    4
     
     
