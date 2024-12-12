@@ -3,9 +3,6 @@
 *** Settings ***
 Library    SeleniumLibrary
 
-*** Variables ***
-${browser}    chrome
-${url}    https://testautomationpractice.blogspot.com/
 
 *** Test Cases ***
 Handling frames
