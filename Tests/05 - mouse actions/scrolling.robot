@@ -19,4 +19,10 @@ scrolling page
     Sleep    2
     Scroll Element Into View    xpath://h3[normalize-space()='Credits']    # scroll till credits element
 
-    
+    Sleep    1
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)   # scroll till bottom of the page
+
+    Sleep    1
+    Execute Javascript    window.scrollTo(0, -document.body.scrollHeight)  # scroll to the top of the page 
+
+    Sleep    2
