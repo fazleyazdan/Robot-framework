@@ -21,16 +21,23 @@ for loop usage
     END
 
     # we can also use for loop by using number from list. first we will create list
-    @{items}    Create List    1    2    3    4
+    @{items}    Create List    1    2    3    4    5    6    7
     
     FOR    ${i}    IN    @{items}
         Log To Console    ${i}
 
     END
 
-    # For loop with strings
+    # For loop with strings. you can also store strings in list & then loop through it. like we did with numbers
     FOR    ${i}    IN    ali    kamran    imran    
         Log To Console    ${i}
         
+    END
+
+    # exit for loop when certain condition is met. as soon as the i==3 it will exit.
+    FOR    ${i}    IN    @{items}
+        Log To Console    ${i}
+        Exit For Loop If    ${i}==3
+
     END
 
