@@ -19,3 +19,18 @@ for loop usage
         Log To Console    ${i}
 
     END
+
+    # we can also use for loop by using number from list. first we will create list
+    @{items}    Create List    1    2    3    4
+    
+    FOR    ${i}    IN    @{items}
+        Log To Console    ${i}
+
+    END
+
+    # For loop with strings
+    FOR    ${i}    IN    ali    kamran    imran    
+        Log To Console    ${i}
+        
+    END
+
