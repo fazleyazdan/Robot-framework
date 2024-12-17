@@ -34,7 +34,7 @@ for loop usage
         
     END
 
-    # exit for loop when certain condition is met. as soon as the i==3 it will exit.
+    # exit criteria: for loop will exit when certain condition is met. as soon as the i==3 it will exit.
     FOR    ${i}    IN    @{items}
         Log To Console    ${i}
         Exit For Loop If    ${i}==3
