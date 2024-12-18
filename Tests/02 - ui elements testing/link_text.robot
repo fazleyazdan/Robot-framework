@@ -17,8 +17,9 @@ Extracting links
 
     # now i want to extract text of these links as well & then display it on terminal
     # for that i will create an empty list first and then store all
+    # if you are starting from 1, make sure to add with the range, because it does not count the last number
     
-    FOR    ${i}    IN RANGE    1    ${links_count}    
+    FOR    ${i}    IN RANGE    1    ${links_count}+1    
         ${link_text}=    Get Text    xpath:(//a)[${i}]
         Log To Console    ${link_text}
 
