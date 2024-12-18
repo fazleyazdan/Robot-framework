@@ -11,6 +11,7 @@ Extracting links
     Maximize Browser Window
 
     # here we have used robot method to count number of links & then stored it in a variable
+    # you can count any elements via this method on a web page
     ${links_count}=    Get Element Count    xpath://a
     Log To Console    ${links_count}
 
