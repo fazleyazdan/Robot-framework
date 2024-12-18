@@ -23,4 +23,6 @@ Extracting links
 
     END
 
-    
+    # here we are looping from 1 to the number links counts
+    # syntax in robot if you wanna parameterize xpath , is to wrap xpath in parentheses
+    # so we when ${i} is 1 , we will extract text of the first link & so on... 
