@@ -20,6 +20,10 @@ Web Tables
     Log To Console    ${rows_count}
     Log To Console    ${cols_count}
 
+    # get data from any element in the table. get data from 5 row & 1st col
+    ${row_text}=    Get Text    xpath://table[@name='BookTable']/tbody/tr[5]/td[1]
+    Log To Console    ${row_text}
+    
     # validate whether col number 2 contains  "Author".
     # here we have given locator of the table & then we specified the col number which is 2. & the value it should contains which is "Author" 
     Table Column Should Contain    css:table[name='BookTable']    2    Author
