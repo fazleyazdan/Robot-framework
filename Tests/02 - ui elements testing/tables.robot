@@ -31,4 +31,7 @@ Web Tables
     Table Header Should Contain    css:table[name='BookTable']    Subject
     Table Cell Should Contain    css:table[name='BookTable']    5    3    Selenium
 
+    # for the cells we have given 4 arguments
+    # the first is the table locator, 5 is the row, 3 is the col & Selenium is the data we expect to be in that cell
+
     Close Browser
