@@ -28,4 +28,7 @@ Web Tables
     # here we have given locator of the table & then we specified the col number which is 2. & the value it should contains which is "Author" 
     Table Column Should Contain    css:table[name='BookTable']    2    Author
     Table Row Should Contain    css:table[name='BookTable']    3    Learn Java
-    
+    Table Header Should Contain    css:table[name='BookTable']    Subject
+    Table Cell Should Contain    css:table[name='BookTable']    5    3    Selenium
+
+    Close Browser
