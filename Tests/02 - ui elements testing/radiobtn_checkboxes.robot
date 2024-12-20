@@ -17,3 +17,4 @@ Handling Radio Buttons & checkboxes
     Select Checkbox    id:thursday
     Unselect Checkbox    id:sunday              # unselect checkboxes
     Close Browser                
+
