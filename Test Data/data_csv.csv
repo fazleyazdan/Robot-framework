@@ -1,0 +1,4 @@
+${username};${password};
+standard_user;wrong;
+user;secret_sauce;
+invalid name;invalid pass;
