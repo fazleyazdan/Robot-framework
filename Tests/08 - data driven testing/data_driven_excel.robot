@@ -3,4 +3,4 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../../Resources/resources.robot
-Library    DataDriver    
+Library    DataDriver    file=  
