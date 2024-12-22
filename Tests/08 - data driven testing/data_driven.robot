@@ -17,7 +17,7 @@ Test Template    invalid login
 # it is common to use in data driven testing
 
 
-# here "username" & "password" are test headers. they are used if you wanna pass params in test cases names
+# here "username" & "password" are test headers. they are used if you wanna pass values with test cases names
 *** Test Cases ***                    username        password
 valid username and empty password    standard_user    ${EMPTY}    
 invalid username and empty password    user    ${EMPTY}    
