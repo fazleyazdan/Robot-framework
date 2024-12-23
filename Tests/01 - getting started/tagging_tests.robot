@@ -10,17 +10,21 @@
 
 *** Test Cases ***
 TC1 Registration
+    [Tags]    Regression
     Log To Console    user is registered
     Log To Console    Registration test is finished
 
 TC2 Login to app
+    [Tags]    Sanity
     Log To Console    user has logged in
     Log To Console    Login test is finished
 
 TC3 Browsing the app 
+    [Tags]    Regression
     Log To Console    user is browsing the app
     Log To Console    Browsing test case is finished
 
 TC4 Logout from app
+    [Tags]    Sanity
     Log To Console    user is logging out from the app
     Log To Console    Logout test is finished
