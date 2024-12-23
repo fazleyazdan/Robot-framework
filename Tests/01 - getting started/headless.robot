@@ -1,4 +1,5 @@
 # just write "headless" with the browser name : headlesschrome or headlessfirefox
+
 *** Settings ***
 Library    SeleniumLibrary 
 
