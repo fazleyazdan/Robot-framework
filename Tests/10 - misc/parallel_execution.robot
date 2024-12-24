@@ -16,3 +16,4 @@
 
 # instead of writing these commands again & again we can write them in a batch file & execute them with one click
 # create a folder in root directory , here i have created run.bat file take a look at it.
+# later we can also use that file when running tests from jenkins
