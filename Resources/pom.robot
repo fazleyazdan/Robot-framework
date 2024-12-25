@@ -12,11 +12,11 @@ open the browser
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
 
-input username_txt
+enter username
     [Arguments]    ${username}
     Input Text    ${username_field}    ${username}
 
-input password_txt
+enter password
     [Arguments]    ${password}
     Input Text    ${password_field}    ${password}
 
