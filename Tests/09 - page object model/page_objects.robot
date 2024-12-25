@@ -6,7 +6,6 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../../Resources/pom.robot
-Resource    ../../Resources/data_driven.robot
 
 
 *** Test Cases ***
