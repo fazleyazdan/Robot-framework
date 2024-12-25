@@ -17,7 +17,7 @@ ${password}    secret_sauce
 *** Test Cases ***
 page object model
     open the browser    ${url}    ${browser}
-    input username_txt    ${username}
-    input password_txt    ${password}
+    enter username    ${username}
+    enter password    ${password}
     click login btn
     verify successful login
