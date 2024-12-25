@@ -8,10 +8,16 @@ Library    SeleniumLibrary
 Resource    ../../Resources/pom.robot
 
 
+*** Variables ***
+${url}    https://www.saucedemo.com/
+${browser}    chrome
+${username}    standard_user
+${password}    secret_sauce
+
 *** Test Cases ***
 page object model
-    open the browser    https://www.saucedemo.com/    chrome
-    input username_txt    standard_user
-    input password_txt    secret_sauce
+    open the browser    ${url}    ${browser}
+    input username_txt    ${username}
+    input password_txt    ${password}
     click login btn
     verify successful login
