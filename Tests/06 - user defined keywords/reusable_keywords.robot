@@ -15,4 +15,3 @@ ${browser}    chrome
 using resource file
     ${pageTitle}=    launch browser    ${url}    ${browser}
     Log To Console    ${pageTitle}
-    
