@@ -1,6 +1,7 @@
 # we can open many tabs
 # the best way to switch between tabs is by their title
 
+
 *** Settings ***
 Library    SeleniumLibrary 
 Library    Process
